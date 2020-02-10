@@ -108,6 +108,72 @@ figure {
   .header-top .fh5co-social {
     text-align: center !important; } }
 
+    .account-login {
+      background: #fff;
+      margin: 15px 0px 20px;
+      overflow: hidden;
+      padding: 25px;
+    }
+    .account-login .page-title {
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .account-login .form-list input.input-text {
+      background: #fff;
+      border: 1px solid #f0f0f0;
+      padding: 10px;
+      width: 80%;
+      margin-top: 5px;
+      outline: none;
+      margin-bottom: 10px;
+    }
+    .account-login .col2-set .col-1 {
+      float: left;
+      padding-bottom: 0;
+      padding: 0px;
+      text-align: left;
+      width: 49%;
+      min-height: 362px;
+      background: #fff;
+      border-right: 1px solid #eaeaea;
+      padding: 25px 25px 0 0;
+      margin-bottom: 15px;
+    }
+    .account-login .col2-set .col-2 {
+      float: right;
+      padding-bottom: 0;
+      padding: 0 0 0 55px;
+      text-align: left;
+      width: 48%;
+      background: #fff;
+      padding: 25px 0;
+      margin-bottom: 25px;
+    }
+    .account-login strong {
+      font-size: 14px;
+      color: #000;
+      margin-bottom: 15px;
+      font-family: 'Roboto', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .account-login .content {
+      margin-top: 8px;
+      padding-top: 12px;
+    }
+    .account-login .content p {
+      margin-bottom: 10px;
+      font-size: 13px;
+    }
+    .account-login .content p.required {
+      font-size: 13px;
+    }
+    .account-login .content .form-list label {
+      font-size: 13px;
+      color: #333;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    
 #fh5co-hero {
   min-height: 700px;
   background: #fff url(../images/loader.gif) no-repeat center center;
