@@ -14,6 +14,8 @@ import { HeaderComponent } from './header/header.component';
 import { SlideComponent } from './slide/slide.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '../material/material.module';
+import { AideComponent } from './aide/aide.component';
+import { AproposComponent } from './apropos/apropos.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { MaterialModule } from '../material/material.module';
     FooterComponent,
     HeaderComponent,
     SlideComponent,
-    BlogComponent
+    BlogComponent,
+    AideComponent,
+    AproposComponent
   ],
   imports: [
     BrowserModule,
