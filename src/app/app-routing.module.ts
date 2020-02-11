@@ -8,6 +8,7 @@ import { LocationComponent } from './location/location.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { PublierAnnonceComponent } from './publier-annonce/publier-annonce.component';
 import { ConnexionComponent } from './connexion/connexion.component';
+import { ArticleComponent } from './article/article.component';
 
 
 const routes: Routes = [
@@ -18,7 +19,8 @@ const routes: Routes = [
   {path : 'contact-us' , component : ContactUsComponent},
   {path : 'publierannonce', component: PublierAnnonceComponent},
   {path : 'connexion' , component : ConnexionComponent},
-  {path : '', redirectTo: '/home', pathMatch: 'full'}
+  {path : '', redirectTo: '/home', pathMatch: 'full'},
+  { path: 'blog/article/1', component:ArticleComponent}
 ];
 
 @NgModule({

@@ -16,6 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '../material/material.module';
 import { AideComponent } from './aide/aide.component';
 import { AproposComponent } from './apropos/apropos.component';
+import { ArticleComponent } from './article/article.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,13 +33,15 @@ import { AproposComponent } from './apropos/apropos.component';
     SlideComponent,
     BlogComponent,
     AideComponent,
-    AproposComponent
+    AproposComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
