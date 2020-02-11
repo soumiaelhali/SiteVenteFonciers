@@ -1,0 +1,64 @@
+h2{
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+mat-card-title{
+    text-align: left;
+}
+#section{
+    background-image: url('/assets/images/realestate.jpg');
+    background-size: cover;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    padding-top: 70px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 120px;
+}
+#aide{
+    margin-top: 20px;text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    padding-top: 70px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 120px;
+}
+a{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 150px 280px 50px 5px;
+}
+.btn-rounded{
+    border-radius: 6em;
+}
+.btn-outline {
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.c-about-us_item{
+    padding-left: 60px;
+    display: inline-block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.c-about-us_number{
+    font-weight: 700;
+    font-size: 40px;
+    color: darkgreen;
+}
+.c-about-us_title{
+    color: black;
+}

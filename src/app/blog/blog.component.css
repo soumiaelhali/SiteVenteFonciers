@@ -52,7 +52,7 @@
     
 }
 img{
-    width: auto;
+    width: 104%;
     height: auto;
     margin-right: 0px;
 }
@@ -60,7 +60,7 @@ img{
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 50px;
-    padding-left: 150px;
+    padding-left: 100px;
 }
 .main{
     padding-top: 65px;
