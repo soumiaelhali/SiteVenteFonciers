@@ -1,0 +1,29 @@
+{
+    "articles":[
+        {"id":1,
+        "title":"Maison et terrain à vendre : 3 conseils pour vous décider",
+        "description":"Dans la jungle des maisons et terrains disponibles à la vente sur le marché, il est parfois difficile de s’y retrouver, d’y voir clair et donc de se décider face aux enjeux financiers. Pourtant, certains éléments bien spécifiques permettent généralement de faire le bon choix d’achat et ainsi réussir son opération immobilière.",
+        "imageUrl":"https://www.presenceterrain.com/images/home-bg-slideshow2.jpg"
+        },
+        {"id":2,
+        "title":"5 questions à se poser avant de faire construire une maison",
+        "description":"Si la question du coût de construction de la maison est un aspect très important sur lequel se focalisent les futurs propriétaires, de nombreux autres points ont des conséquences sur le projet, et peuvent avoir des effets à long terme ; ils doivent donc être minutieusement réfléchis.",
+        "imageUrl":"https://www.esteban-frederic.fr/wp-content/uploads/2017/05/question-mark-stack.jpg"},
+        {
+        "id":3,
+        "title":"Peut-on construire une maison sur un terrain agricole ?",
+        "description":"Contrairement aux idées reçues, un terrain agricole n’est pas nécessairement inconstructible. Cependant, pour y être autorisé, le demandeur doit prouver une activité en lien avec la nature agricole ou forestière de la zone, et démontrer la nécessité de la construction de la maison sur place !",
+        "imageUrl":"https://images.prismic.io/figaroimmo/b99a6577-0d4c-4f31-9be8-103fe197601a_terrain-agricole.jpg?auto=compress,format&rect=0,0,1000,667&w=720&h=480"
+        },
+        {
+        "id":4,
+        "title":"Comment savoir si un terrain est constructible ?",
+        "description":"Contrairement à ce que l'on pourrait penser, il n'est pas toujours facile de savoir si oui ou non un terrain est constructible. La classification des zones constructibles évolue très régulièrement, à tel point que les propriétaires eux-mêmes peuvent s'y perdre. Voici comment déterminer avec certitude si un terrain est constructible ou non.",
+        "imageUrl":"https://images.prismic.io/figaroimmo/fefcaaf03c9ed072c24c393068186f13f4613d7d_savoir-si-terrain-constructible.jpg?auto=compress,format"
+        },
+        {
+        "id":5,
+        "title":"Combien coûte une division de terrain ?",
+        "description":"La division de terrain a le vent en poupe. Cette opération immobilière a en effet de nombreux avantages, dont ceux d'offrir une meilleure rentabilité et de lutter contre la pénurie de logements, en milieu urbain notamment. Zoom sur cette pratique et sur son coût pour le particulier.",
+        "imageUrl":"https://images.prismic.io/figaroimmo/3bc8c9d7963e34abcadd71fce60fb27d5c0ec72c_cout-division-terrain.jpg?auto=compress,format"}
+        ]}
