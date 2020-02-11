@@ -16,6 +16,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '../material/material.module';
 import { AideComponent } from './aide/aide.component';
 import { AproposComponent } from './apropos/apropos.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { AnnonceService } from './services/service-annonce/annonce.service';
 
 @NgModule({
   declarations: [
@@ -37,9 +40,12 @@ import { AproposComponent } from './apropos/apropos.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AnnonceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

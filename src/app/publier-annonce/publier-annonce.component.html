@@ -5,12 +5,14 @@
         <h3>Publier une annonce</h3>
       </div>
     </div>
-    <form action="#">
+    <form [formGroup]="service.form" (submit)="onSubmit()">
+      <input type="hidden" formControlName="id" />
       <div class="col-lg-12">
         <div class="row">
           <div class="col-md-4">
             <div class="form-group">
               <input
+                formControlName="nom"
                 type="text"
                 class="form-control"
                 placeholder="Nom de l'annoceur"
@@ -20,6 +22,7 @@
           <div class="col-md-4">
             <div class="form-group">
               <input
+                formControlName="email"
                 type="text"
                 class="form-control"
                 placeholder="Email de l'annoceur"
@@ -29,6 +32,7 @@
           <div class="col-md-4">
             <div class="form-group">
               <input
+                formControlName="telephone"
                 type="text"
                 class="form-control"
                 placeholder="n° Telephone"
@@ -38,6 +42,7 @@
           <div class="col-md-4">
             <div class="form-group">
               <input
+                formControlName="title"
                 type="text"
                 class="form-control"
                 placeholder="Titre de l'annoceur"
@@ -48,6 +53,7 @@
           <div class="col-md-4">
             <div class="form-group">
               <input
+                formControlName="prix"
                 type="text"
                 class="form-control"
                 placeholder="prix de vente/location"
@@ -58,6 +64,7 @@
           <div class="col-md-4">
             <div class="form-group">
               <input
+                formControlName="surface"
                 type="text"
                 class="form-control"
                 placeholder="Surface du terrain"
@@ -67,21 +74,43 @@
 
           <div class="col-md-6" style="text-align: center;">
             <div class="form-group">
-              <mat-radio-group aria-label="Select an option">
-                <mat-radio-button value="1">A vendre</mat-radio-button>
-                <mat-radio-button value="2">A louer</mat-radio-button>
+              <mat-radio-group
+                aria-label="Select an option"
+                formControlName="choix"
+              >
+                <mat-radio-button value="false">A vendre</mat-radio-button>
+                <mat-radio-button value="true">A louer</mat-radio-button>
               </mat-radio-group>
             </div>
           </div>
+
+
+
           <div class="col-md-6" style="text-align: center;">
             <div class="form-group">
-              <input type="file" placeholder="importer image" />
+              <input
+                type="file"
+                placeholder="importer image"
+                formControlName="image_url"
+              />
             </div>
           </div>
 
+          
+          <div class="col-md-12">
+            <div class="form-group">
+              <input
+                formControlName="adresse"
+                type="text"
+                class="form-control"
+                placeholder="adresse du terrain"
+              />
+            </div>
+          </div>
           <div class="col-md-12">
             <div class="form-group">
               <textarea
+                formControlName="detail"
                 name=""
                 class="form-control"
                 id=""
