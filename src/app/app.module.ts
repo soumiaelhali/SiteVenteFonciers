@@ -16,14 +16,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '../material/material.module';
 import { AideComponent } from './aide/aide.component';
 import { AproposComponent } from './apropos/apropos.component';
-<<<<<<< HEAD
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AnnonceService } from './services/service-annonce/annonce.service';
-=======
 import { ArticleComponent } from './article/article.component';
-import { HttpClientModule } from '@angular/common/http';
->>>>>>> 4f8a9d42ee9dd86e4624616c431dc6ed1db9a475
+
 
 @NgModule({
   declarations: [
@@ -47,11 +44,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-<<<<<<< HEAD
     FormsModule,
     ReactiveFormsModule,
-=======
->>>>>>> 4f8a9d42ee9dd86e4624616c431dc6ed1db9a475
     HttpClientModule
   ],
   providers: [AnnonceService],
