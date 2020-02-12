@@ -28,12 +28,12 @@ comptes: Compte[] = [];
 
   onSubmit() {
     if (this.service.form.valid) {
-      this.compte = this.service.form.value;
+      this.compte = this.service.form.value; 
       console.log(this.compte);
       this.add();
       this.service.form.reset();
       this.service.initializeFormGroup();
-      this.router.navigate(['/home']);
+      this.router.navigate(['/authentification']);
 
     }else{
       let cmp:Compte;
