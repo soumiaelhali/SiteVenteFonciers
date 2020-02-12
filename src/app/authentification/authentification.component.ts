@@ -12,21 +12,11 @@ import { ok } from 'assert';
   templateUrl: './authentification.component.html',
   styleUrls: ['./authentification.component.css']
 })
-export class AuthentificationComponent implements OnInit,HttpInterceptor {
-  intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    const { url, method, headers, body } = request;
-  }
-  comptes = [];
-  private compte: Compte = {
-    FirstName: '',   
-    LastName: '',
-    email: '',  
-    password:'',
-    mobile: '',
-    gender: ''
-};
+export class AuthentificationComponent implements OnInit {
+  
+  
 
-  constructor(private service: CompteService, private router: Router) { }
+  constructor() { }
 
   ngOnInit() {
   } 
@@ -42,5 +32,6 @@ export class AuthentificationComponent implements OnInit,HttpInterceptor {
         token: 'fake-jwt-token'
     })
 }*/
+  
 
 }

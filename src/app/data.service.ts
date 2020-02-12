@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DataService {
   private REST_API_SERVER = "http://localhost:3000/articles";
-
+  private users_access = "http://localhost:3000/users";
 
   constructor(private httpClient: HttpClient) { }
   public sendGetRequest(){
@@ -14,5 +14,8 @@ export class DataService {
   }
   getArticle(id) {
     return this.httpClient.get(`${this.REST_API_SERVER }/${id}`)
+  }
+  getCompte(id) {
+    return this.httpClient.get(`${this.users_access }/${id}`)
   }
 }
