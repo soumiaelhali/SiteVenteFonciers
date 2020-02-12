@@ -9,7 +9,7 @@
             {{article.text1}}
         </p>
         <p id="S3"> 
-            {{article.text2}}
+            {{article.text2}} 
         </p>
         <p id="S4">
             {{article.text3}}
@@ -19,10 +19,10 @@
         <aside>
             <h4>Menu</h4>
             <ol>
-                <li><a href="blog/article/0/#S1">Introduction</a></li>
-                <li><a href="blog/article/0/#S2">{{article.soustitre1}}</a></li>
-                <li><a href="blog/article/0/#S3">{{article.soustitre2}}</a></li>
-                <li><a href="blog/article/0/#S4">{{article.soustitre3}}</a></li>
+                <li><a href="blog/article/{{article.id}}/#S1">Introduction</a></li>
+                <li><a href="blog/article/{{article.id}}/#S2">{{article.soustitre1}}</a></li>
+                <li><a href="blog/article/{{article.id}}/#S3">{{article.soustitre2}}</a></li>
+                <li><a href="blog/article/{{article.id}}/#S4">{{article.soustitre3}}</a></li>
             </ol>
         </aside>
         
