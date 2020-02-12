@@ -5,9 +5,12 @@
                     Agadir-Maroc (33290)</h3>
                     <img  src="../assets/images/land.jpg" alt="Photo of a land">
                     <div class="options">
-                        <span>Ajouter à favoris</span>
-                        <span>Sauvegarder l'annonce <i class="fas fa-bookmark"></i></span>
-                        <span>Partager</span>
+                        <button mat-icon-button color="accent" aria-label="Example icon-button with a heart icon">
+                            <mat-icon></mat-icon>
+                          </button>
+                        <span><a href="">Ajouter à favoris</a></span>
+                        <span><a href="">Sauvegarder l'annonce </a><i class="fas fa-bookmark"></i></span>
+                        <span><a href="">Partager</a></span>
                     </div>
                     <div class="description">
                     <span id="terrain">Terrain 530m²</span>
@@ -19,8 +22,28 @@
                         Terrain sélectionné auprès de notre partenaire foncier dans le cadre d'un projet avec Vision Habitat. 
                     </p>
                     <h4>Caractéristiques</h4><hr>
-                    <span>Prix</span>
-                    <span>Sourface</span>
+                    <span class="cara">Prix:  <h6>550000</h6></span>
+                    <span class="cara">Sourface:  <h6>530m²</h6></span>
+                    <span class="cara">Lieu:  <h6>Al houda, Agadir Maroc</h6></span>
+                    <button mat-raised-button color="" id="seconnecter" routerLink="/home"> Retour</button>
+            </div>
+            <div class="col-md-4">
+                <div class="Contact">
+                    <h4>Contacter l'annonceur</h4>
+                    <h5 id="annonceur">Monsieur. Hicham Moncif</h5>
+                    <p>
+                    <span class="cara">Prix:  <h6>550000</h6></span>
+                    <span class="cara">Sourface:  <h6>530m²</h6></span>
+                    </p>
+                    <button mat-raised-button color="primary" id="contactertele" onclick="document.getElementById('contactertele').innerHTML = '0701020304'"> Contacter par téléphone</button>
+                    <button mat-raised-button color="primary" id="contactermail" onclick="document.getElementById('contactermail').innerHTML = 'h.moncif@gmail.com'"> Contacter par email</button>
+                </div>
             </div>
         </div>
-    
+        <div class="row ">
+            <div class="col-md-12">
+                <h4>Voir l'emplacement sur la carte</h4><hr>
+                <div class="mapouter map"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=maroc&t=&z=5&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+            </div>
+        </div>
+   
