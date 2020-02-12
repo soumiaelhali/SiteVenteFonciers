@@ -10,6 +10,7 @@ import { PublierAnnonceComponent } from './publier-annonce/publier-annonce.compo
 import { ConnexionComponent } from './connexion/connexion.component';
 import { ArticleComponent } from './article/article.component';
 import { AuthentificationComponent } from './authentification/authentification.component';
+import { DetailsAnnonceComponent } from './details-annonce/details-annonce.component';
 
 
 const routes: Routes = [
@@ -22,7 +23,8 @@ const routes: Routes = [
   {path : 'connexion' , component : ConnexionComponent},
   {path : 'authentification' , component : AuthentificationComponent},
   {path : '', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'blog/article/:id', component:ArticleComponent}
+  { path: 'blog/article/:id', component:ArticleComponent},
+  {path: 'home/annonce/5', component:DetailsAnnonceComponent}
 ];
 
 @NgModule({
