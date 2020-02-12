@@ -44,10 +44,17 @@ export class PublierAnnonceComponent implements OnInit {
 
  onSubmit()
  {
-  this.anno = this.service.form.value;
-  console.log(this.anno);
-  this.add();
-  this.service.form.reset();
-  this.service.initializeFormGroup();
+  if(this.service.form.valid){
+    this.anno = this.service.form.value;
+    
+    if(this.service.form.value.id==null){
+      console.log(this.anno);
+      this.add();
+      this.service.form.reset();
+      this.service.initializeFormGroup();
+      alert("lannoonce a ete ajoute avec succes");
+
+    }
+  }
 }
 }

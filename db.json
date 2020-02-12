@@ -1,0 +1,34 @@
+{
+  "annonces": [
+    {
+      "id": 1,
+      "title": "dfghjkl",
+      "nom": "fhgjkl",
+      "email": "sfdghjk@fghjkl.com",
+      "telephone": "2345678976543",
+      "surface": 0,
+      "choix": "false",
+      "adresse": "fdghju",
+      "detail": "dfghjulkm",
+      "image_url": "C:\\fakepath\\farml.jpg",
+      "prix": 0,
+      "etat": false,
+      "date": 1581466672533
+    },
+    {
+      "id": 2,
+      "title": "vente",
+      "nom": "soso",
+      "email": "soso@gmail.com",
+      "telephone": "200000000000",
+      "surface": "154",
+      "choix": "true",
+      "adresse": "marrakech",
+      "detail": "kjsnkznsdkzn",
+      "image_url": "C:\\fakepath\\land.jpg",
+      "prix": "15",
+      "etat": false,
+      "date": 1581468952547
+    }
+  ]
+}
