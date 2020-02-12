@@ -20,6 +20,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AnnonceService } from './services/service-annonce/annonce.service';
 import { ArticleComponent } from './article/article.component';
+import { AuthentificationComponent } from './authentification/authentification.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { ArticleComponent } from './article/article.component';
     BlogComponent,
     AideComponent,
     AproposComponent,
-    ArticleComponent
+    ArticleComponent,
+    AuthentificationComponent
   ],
   imports: [
     BrowserModule,
