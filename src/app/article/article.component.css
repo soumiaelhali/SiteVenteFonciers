@@ -7,10 +7,29 @@ h3{
     padding-top: 100px;
     padding-bottom: 40px;
 }
+h4, h2{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    font-weight: 300;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
 img{
     padding: 10px 350px 50px 100px;
     width: auto;
     height: auto;
+}
+#land{
+    padding: 0px 0px 0px 0px;
+    width: 108%;
+    height: 100%;
+}
+#constructible{
+    padding: 0px 0px 0px 0px;
+    width: 108%;
+    height: 285px;
 }
 p{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -22,6 +41,30 @@ aside{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 200;
     font-size: 20px;
-    margin-left: 180px;
-    margin-top: 150px;
+    margin-left: 100px;
+    margin-top: 250px;
+    width: 290px;
+    position: fixed;
+    z-index: 10;
+    background: rgba(238, 238, 238, 0.925);
+    overflow-x: hidden;
+}
+.aide{
+    margin-left: 70px;
+}
+#txt1, #txt2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 10px;
+}
+#titre{
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    font-weight: 500;
+    font-size: 30px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 50px;
 }
