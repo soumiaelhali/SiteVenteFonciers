@@ -20,7 +20,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AnnonceService } from './services/service-annonce/annonce.service';
 import { ArticleComponent } from './article/article.component';
+<<<<<<< HEAD
 
+=======
+>>>>>>> b7694e7440f2ede681317ba705f74cf67ce01f05
 import { DetailsAnnonceComponent } from './details-annonce/details-annonce.component';
 
 
@@ -41,7 +44,10 @@ import { DetailsAnnonceComponent } from './details-annonce/details-annonce.compo
     AideComponent,
     AproposComponent,
     ArticleComponent,
+<<<<<<< HEAD
     ArticleComponent,
+=======
+>>>>>>> b7694e7440f2ede681317ba705f74cf67ce01f05
     DetailsAnnonceComponent
   ],
   imports: [
