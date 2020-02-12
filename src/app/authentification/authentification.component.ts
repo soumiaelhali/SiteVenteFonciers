@@ -20,6 +20,18 @@ export class AuthentificationComponent implements OnInit {
 
   ngOnInit() {
   } 
+  /*authenticate() {
+    const { email, password } = body;
+    const compte = comptes.find(x => x.email === email && x.password === password);
+    if (!compte) return error('email or password is incorrect');
+    return ok({
+        id: compte.id,
+        email: compte.email,
+        firstName: compte.firstName,
+        lastName: compte.lastName,
+        token: 'fake-jwt-token'
+    })
+}*/
   
 
 }

@@ -1,4 +1,5 @@
 export interface annonce{
+  [x: string]: any;
     id?:number;
     title: string,
     email: string,

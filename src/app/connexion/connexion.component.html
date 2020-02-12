@@ -1,60 +1,94 @@
+<div id="fh5co-contact" class="container-fluid" style="background-color: 	#dfe4ea;">
+  <div class="container">
 
-<h3>Formulaire d'inscription</h3>
-    <form [formGroup]="service.form" class="normal-form" (submit)="onSubmit()" >
-      <mat-grid-list cols="2" rowHeight="300px"> 
-        <mat-grid-tile>
-          <div class="controles-container">
-            <input type="hidden" formControlName="id">
-            <mat-form-field appearance="fill">
-              <input formControlName="FirstName" matInput placeholder="First Name*">
-              <mat-error>This field is mandatory.</mat-error>
-            </mat-form-field>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center heading-section">
+          <h3>Connexion & inscription</h3>
+      </div>
+  </div>
+    <div class="account-login">
+      <fieldset class="col2-set">
 
-            <mat-form-field appearance="fill">
-              <input formControlName="LastName" matInput placeholder="Last Name*">
-              <mat-error>This field is mandatory.</mat-error>
-            </mat-form-field><br>
-            <mat-form-field appearance="fill">
-              <input formControlName="email" matInput placeholder="Email">
-              <mat-error>Invalid email address.</mat-error>
-            </mat-form-field><br>
-            <mat-form-field appearance="fill">
-              <input formControlName="mobile" matInput placeholder="Mobile*">
-              <mat-error *ngIf="service.form.controls['mobile'].errors?.required">This field is mandatory.
-                </mat-error>
-                <mat-error *ngIf="service.form.controls['mobile'].errors?.minlength">Minimum 8 charactors needed.
-                </mat-error>
-            </mat-form-field><br>
-            <mat-form-field appearance="fill">
-              <mat-label>Enter your password</mat-label>
-              <input formControlName="password" matInput [type]="hide ? 'password' : 'text'">
-              <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-              </button>
-            </mat-form-field>
-          </div>
-        </mat-grid-tile>
-        <mat-grid-tile>
-          <div class="controles-container">
-            <div class="add-bottom-padding">
-              <mat-radio-group formControlName="gender">
-                <mat-radio-button value="1">Male</mat-radio-button>
-                <mat-radio-button value="2">Female</mat-radio-button>
-              </mat-radio-group>
-            </div>
-            <div class="button-row">
-              <button mat-raised-button color="primary" type="submit" [disabled]="service.form.invalid" >Submit</button>
-              <button mat-raised-button color="warn" >Clear</button>
-            </div>
-          </div>
-          
-          
-        </mat-grid-tile>
-        
-      </mat-grid-list>
+
+        <form method = "post" action="">
+        <div class="col-1 new-users">
+          <h3>Nouveau client</h3>
+
+          <p>en creant un compt chez nous vous aurrez la possiblite .....</p>
       
-    </form>
-    <span>Vous avez déja un compte?</span>
-    <div><button mat-raised-button color="" id="seconnecter" (click)="goAuthentification()">Se connecter</button></div>
-    
+        <div class="col">
+          <div class="row">
+              <div class="col">
+                  <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Name">
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="form-group">
+                      <input type="email" class="form-control" placeholder="Email">
+                  </div>
+              </div>
+          
+              <div class="col">
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="password">
+                </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                  <input type="pasword" class="form-control" placeholder="confirmation password">
+              </div>
+          </div>
+              <div class="col-md-12">
+                  <div class="form-group">
+                      <input type="submit" value="S'inscrire" class="btn btn-primary">
+                  </div>
+              </div>
+          </div>
+      </div>
 
+        </div>
+      </form>
+
+
+
+
+      
+        <form method="POST" action="">
+          <div class="col-2 registered-users">
+            <h3>Client inscris</h3>
+
+            <p>si vous avez un compt avec nous , veuillez vous connecter</p>
+            <div class="col">
+              <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Name">
+              </div>
+          </div>
+          <div class="col">
+              <div class="form-group">
+                  <input type="email" class="form-control" placeholder="Email">
+              </div>
+          </div>
+            <div class="form-group row">
+              <div class="col-md-6 offset-md-4">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="remember"
+                    name=""
+                  /> se souvenir
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <input type="submit" value="Se connecter" class="btn btn-primary">
+                </div>
+            </div>
+          </div>
+        </form>
+      </fieldset>
+    </div>
+  </div>
+</div>

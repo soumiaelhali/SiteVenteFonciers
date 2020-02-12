@@ -63,6 +63,10 @@ export class AnnonceService {
   populateform(row){
     this.form.setValue(row);
   }
+  
+  getAll() {
+    return this.http.get<annonce[]>(this.url);
+  }
 
 
 }

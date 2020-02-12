@@ -21,7 +21,6 @@ const routes: Routes = [
   {path : 'contact-us' , component : ContactUsComponent},
   {path : 'publierannonce', component: PublierAnnonceComponent},
   {path : 'connexion' , component : ConnexionComponent},
-  {path : 'authentification' , component : AuthentificationComponent},
   {path : '', redirectTo: '/home', pathMatch: 'full'},
   { path: 'blog/article/:id', component:ArticleComponent},
   {path: 'home/annonce/5', component:DetailsAnnonceComponent}

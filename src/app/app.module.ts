@@ -40,6 +40,7 @@ import { DetailsAnnonceComponent } from './details-annonce/details-annonce.compo
     BlogComponent,
     AideComponent,
     AproposComponent,
+    ArticleComponent
     ArticleComponent,
     AuthentificationComponent,
     DetailsAnnonceComponent
