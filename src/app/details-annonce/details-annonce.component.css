@@ -21,9 +21,34 @@ h3{
     padding-top: 8px;
     padding-bottom: 20px;
     margin-left: 60px;
+    font-style: darkgray;
+}
+.cara{
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    font-weight: 100;
+    font-size: 20px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    margin-left: 60px;
+}
+h6{
+    display: inline-block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 20px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    color:darkgreen;
 }
 span{
     margin-right: 20px;
+    
+}
+button{
+    margin-left: 50px;
+    margin-bottom: 40px;
 }
 .description{
     margin-top: 20px;
@@ -41,6 +66,17 @@ hr{
     margin-left: 50px;
     width: 760px;
     height: 7px;
+}
+h5{
+    margin-left: 90px;
+    text-align: center;
+    display: inline-block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    color:darkgreen;
 }
 p{
     text-align: left;
@@ -70,4 +106,16 @@ p{
     font-weight: 700;
     font-size: 30px;
     color: darkgreen;
+}
+
+.Contact{
+    width: auto;
+    height: 600px;
+    background-color: rgb(250, 248, 243);
+    margin-top: 230px;
+    padding-top: 30px;
+}
+.map{
+    margin-left: 150px;
+    margin-bottom: 50px;
 }
