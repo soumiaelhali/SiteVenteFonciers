@@ -44,6 +44,21 @@
       "prix": "45",
       "etat": false,
       "date": 1581529662505
+    },
+    {
+      "id": 4,
+      "title": "vente de foncier1",
+      "nom": "soumia",
+      "email": "soumia@gmail.com",
+      "telephone": "0707577009",
+      "surface": "152",
+      "choix": "false",
+      "adresse": "marrakech",
+      "detail": "detail",
+      "image_url": "C:\\fakepath\\farml.jpg",
+      "prix": "12",
+      "etat": false,
+      "date": 1581541017998
     }
   ],
   "articles": [
@@ -128,5 +143,4 @@
       "gender": "2"
     }
   ]
-
 }

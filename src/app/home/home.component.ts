@@ -9,7 +9,7 @@ import { annonce } from '../model/annonce';
 })
 export class HomeComponent implements OnInit {
  resp : annonce[];
-  /*contacts: annonce[] = [];*/
+
   constructor( private service: AnnonceService) { }
 
 

@@ -18,12 +18,12 @@ export class AnnonceService {
     nom: new FormControl('',Validators.required),
     email: new FormControl('',Validators.email),
     telephone: new FormControl('',[Validators.required,Validators.minLength(8)]),
-    surface: new FormControl(0),
+    surface: new FormControl(null),
     choix: new FormControl(false),
     adresse: new FormControl(''),
     detail: new FormControl(''),
     image_url: new FormControl(''),
-    prix: new FormControl(0),
+    prix: new FormControl(null),
     etat: new FormControl(false),
     date: new FormControl(Date.now())
   

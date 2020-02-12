@@ -101,7 +101,7 @@ a{
 .content{
     position:absolute;
     top :75%;
-    left:40%;
+    left:50%;
     transform: translate(-50%,-50%);
     -ms-transform:translate(-50%,-50%);
     text-transform : uppercase;
@@ -113,17 +113,15 @@ a{
 }
 
 .content p{
-    font-size : 24px;
+    font-size : 20px;
     display : block;
     background-color: rgb(13, 207, 94);
     text-align : center;
-    padding :20px;
+    padding :10px;
     cursor: pointer;
     color :White;
 }
-.overlay{
-    opacity: 0;
-}
+
 
 .fh5co-property:hover {
     opacity:.5;
