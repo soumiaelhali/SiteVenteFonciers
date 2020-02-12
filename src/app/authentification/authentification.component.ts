@@ -30,7 +30,7 @@ export class AuthentificationComponent implements OnInit,HttpInterceptor {
 
   ngOnInit() {
   } 
-  authenticate() {
+  /*authenticate() {
     const { email, password } = body;
     const compte = comptes.find(x => x.email === email && x.password === password);
     if (!compte) return error('email or password is incorrect');
@@ -41,6 +41,6 @@ export class AuthentificationComponent implements OnInit,HttpInterceptor {
         lastName: compte.lastName,
         token: 'fake-jwt-token'
     })
-}
+}*/
 
 }
