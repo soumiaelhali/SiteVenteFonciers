@@ -20,7 +20,7 @@ const routes: Routes = [
   {path : 'publierannonce', component: PublierAnnonceComponent},
   {path : 'connexion' , component : ConnexionComponent},
   {path : '', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'blog/article/1', component:ArticleComponent}
+  { path: 'blog/article/:id', component:ArticleComponent}
 ];
 
 @NgModule({

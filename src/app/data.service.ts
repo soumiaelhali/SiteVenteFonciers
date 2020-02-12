@@ -12,4 +12,7 @@ export class DataService {
   public sendGetRequest(){
     return this.httpClient.get(this.REST_API_SERVER);
   }
+  getArticle(id) {
+    return this.httpClient.get(`${this.REST_API_SERVER }/${id}`)
+  }
 }
