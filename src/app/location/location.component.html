@@ -8,14 +8,14 @@
 			</div>
 			<div class="row"  >
 
-				<div class="col-md-4" *ngFor="let element of resp">
-					<div *ngIf = "element.choix == 'true' "></div>
+				<div class="col-md-4" *ngFor="let element of resp ; let i = index">
+					<div *ngIf = "element.choix == 'true' ">
 					<div class="property">
-						<a href="#" class="fh5co-property" style="background-image: url(assets/images/agadir.jpg);">
+						<a href="#" class="fh5co-property" [style.backgroundImage]= "'url(assets/images/land'+(i)+'.png)'">
 	
 							<span class="status">A Louer</span>
 									   
-							<div class="overlay">                         
+							<div class="overlay">                        
 								<div class="content">
 									<p> {{element.prix}} MAD</p>
 								</div>
@@ -28,7 +28,7 @@
 					</div>
 				</div>
 
-			
+			</div>
 			</div>
 		</div>
 	</div>
