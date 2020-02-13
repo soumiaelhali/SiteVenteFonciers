@@ -2,33 +2,33 @@
   <div class="container">
     <div class="account-login">
       <fieldset class="col2-set">
-        <form method = "post" action="">
+        <form method = "POST" [formGroup]="service.form" class="normal-form" (ngSubmit)="onSubmit()">
         <div class="col-1 new-users">
           <h3>Nouveau client</h3>
 
-          <p>en creant un compt chez nous vous aurrez la possiblite .....</p>
+          <p>La création d'un compte vous permet de sauvegarder vos recherches, les ajouter à favoris et de recevoir des notifications</p>
       
         <div class="col">
           <div class="row">
               <div class="col">
                   <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Name">
+                      <input type="text" formControlName="FirstName" name="FirstName" class="form-control" placeholder="First Name">
                   </div>
               </div>
               <div class="col">
                   <div class="form-group">
-                      <input type="email" class="form-control" placeholder="Email">
+                      <input type="text" formControlName="LastName" class="form-control" placeholder="Last name">
                   </div>
               </div>
           
               <div class="col">
                 <div class="form-group">
-                    <input type="password" class="form-control" placeholder="password">
+                    <input type="email" formControlName="email" class="form-control" placeholder="Email">
                 </div>
             </div>
             <div class="col">
               <div class="form-group">
-                  <input type="pasword" class="form-control" placeholder="confirmation password">
+                  <input type="password" formControlName="password" class="form-control" placeholder="Password">
               </div>
           </div>
               <div class="col-md-12">
@@ -48,9 +48,9 @@
       
         <form method="POST" action="">
           <div class="col-2 registered-users">
-            <h3>Client inscris</h3>
+            <h3>Client inscrit</h3>
 
-            <p>si vous avez un compt avec nous , veuillez vous connecter</p>
+            <p>Veuillez entrez votre email et mot de passe pour se connecter</p>
             <div class="col">
               <div class="form-group">
                   <input type="text" class="form-control" placeholder="Name">

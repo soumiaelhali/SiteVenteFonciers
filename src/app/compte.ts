@@ -3,8 +3,6 @@ export interface Compte {
     FirstName: string;
     LastName:string;
     email: string;
-    mobile: string;
-    gender: string;
     password:string;
       
       

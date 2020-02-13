@@ -41,7 +41,6 @@ import { DetailsAnnonceComponent } from './details-annonce/details-annonce.compo
     AideComponent,
     AproposComponent,
     ArticleComponent,
-    ArticleComponent,
     DetailsAnnonceComponent
   ],
   imports: [

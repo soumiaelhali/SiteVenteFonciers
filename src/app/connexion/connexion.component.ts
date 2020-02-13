@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators, NgForm } from '@angular/forms';
 import { CompteService } from '../compte.service';
 import { Router } from '@angular/router';
 import { Compte } from '../compte';
@@ -15,9 +15,7 @@ export class ConnexionComponent implements OnInit {
     FirstName: '',   
     LastName: '',
     email: '', 
-    password:'',
-    mobile: '',
-    gender: ''
+    password:''
 };
 comptes: Compte[] = [];
 
@@ -27,13 +25,13 @@ comptes: Compte[] = [];
   }
 
   onSubmit() {
-    if (this.service.form.valid) {
+    if (this.service.form) {
       this.compte = this.service.form.value; 
       console.log(this.compte);
       this.add();
       this.service.form.reset();
       this.service.initializeFormGroup();
-      this.router.navigate(['/authentification']);
+      this.router.navigate(['/home']);
 
     }else{
       let cmp:Compte;
@@ -43,14 +41,12 @@ comptes: Compte[] = [];
         FirstName: cmp.FirstName,
         LastName: cmp.LastName, 
         email: cmp.email,
-        mobile: cmp.mobile,
-        password:cmp.password,
-        gender: cmp.gender
+        password:cmp.password
       };
     }
   }
   goAuthentification(){
-    this.router.navigate(['/authentification']);
+    this.router.navigate(['']);
   }
 
   

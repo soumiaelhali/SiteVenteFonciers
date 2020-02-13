@@ -9,7 +9,6 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { PublierAnnonceComponent } from './publier-annonce/publier-annonce.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { ArticleComponent } from './article/article.component';
-import { AuthentificationComponent } from './authentification/authentification.component';
 import { DetailsAnnonceComponent } from './details-annonce/details-annonce.component';
 
 

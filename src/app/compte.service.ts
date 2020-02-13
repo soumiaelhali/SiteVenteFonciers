@@ -20,9 +20,7 @@ export class CompteService {
     FirstName: new FormControl('', Validators.required),
     LastName: new FormControl('', Validators.required),
     email: new FormControl('', Validators.email),
-    password: new FormControl('', Validators.required),
-    mobile: new FormControl('', [Validators.required, Validators.minLength(8)]),
-    gender: new FormControl('1')
+    password: new FormControl('', Validators.required)
   });
 
   initializeFormGroup() {
@@ -31,9 +29,7 @@ export class CompteService {
       FirstName: '',
       LastName: '',
       email: '',
-      password:'',
-      mobile: '',
-      gender: '1'
+      password:''
     });
   }
 }
