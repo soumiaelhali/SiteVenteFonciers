@@ -28,6 +28,7 @@ const routes: Routes = [
   {path : '', redirectTo: '/home', pathMatch: 'full'},
   { path: 'blog/article/:id', component:ArticleComponent},
   {path: 'home/annonce/5', component:DetailsAnnonceComponent}
+ 
 ];
 
 @NgModule({

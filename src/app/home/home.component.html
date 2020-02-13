@@ -7,7 +7,7 @@
             <!--elements -->
             <div class="col-md-4" *ngFor="let element of resp; let i = index">
                 <div class="property">
-                    <a href="#" class="fh5co-property" [style.backgroundImage]= "'url(assets/images/land'+(i)+'.png)'">
+                    <a href="home/annonce/5" class="fh5co-property" [style.backgroundImage]= "'url(assets/images/land'+(i)+'.png)'">
 
                         <span class="status" *ngIf = "element.choix == 'true' ">A Louer</span>
                         <span class="status" *ngIf = "element.choix == 'false' ">A Vendre</span>
