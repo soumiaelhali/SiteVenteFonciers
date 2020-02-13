@@ -130,4 +130,8 @@ a{
 .fh5co-property:hover .overlay{
     opacity:1;
 }
+img{
+    width: 110%;
+    height: 300px;
+}
 
