@@ -41,12 +41,14 @@ import { OverlayModule } from "@angular/cdk/overlay";
 import { PlatformModule } from "@angular/cdk/platform";
 import { ObserversModule } from "@angular/cdk/observers";
 import { PortalModule } from "@angular/cdk/portal";
+import { FormsModule } from '@angular/forms';
 
 /**
  * NgModule that includes all Material modules that are required to serve the demo-app.
  */
 @NgModule({
   exports: [
+    FormsModule,
     MatAutocompleteModule,
     MatButtonModule,
     MatButtonToggleModule,

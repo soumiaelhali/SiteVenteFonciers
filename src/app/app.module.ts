@@ -20,15 +20,19 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AnnonceService } from './services/service-annonce/annonce.service';
 import { ArticleComponent } from './article/article.component';
-
 import { DetailsAnnonceComponent } from './details-annonce/details-annonce.component';
 import { ProfileComponent } from './profile/profile.component';
-import { LoginPopupComponent } from './login-popup/login-popup.component';
+import { ModalComponent } from './modal/modal.component';
+import { NotifierModule } from "angular-notifier";
+import { FavorisComponent } from './favoris/favoris.component';
+import { AuthStore } from './store/auth.store';
+
 
 
 
 @NgModule({
   declarations: [
+
     AppComponent,
     HomeComponent,
     VenteComponent,
@@ -45,9 +49,12 @@ import { LoginPopupComponent } from './login-popup/login-popup.component';
     ArticleComponent,
     DetailsAnnonceComponent,
     ProfileComponent,
-    LoginPopupComponent
+    ModalComponent,
+    FavorisComponent,
+
   ],
   imports: [
+    NotifierModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -56,7 +63,11 @@ import { LoginPopupComponent } from './login-popup/login-popup.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [AnnonceService],
-  bootstrap: [AppComponent]
+  providers: [
+    AnnonceService,
+    AuthStore
+  ],
+  bootstrap: [AppComponent],
+
 })
 export class AppModule { }

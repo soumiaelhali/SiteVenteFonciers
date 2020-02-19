@@ -6,24 +6,25 @@
             <!-- START #fh5co-menu-wrap -->
             <nav id="fh5co-menu-wrap" role="navigation">
                 <ul class="sf-menu" id="fh5co-primary-menu">
-                    <li class=""><a routerLink="/home" routerLinkActive="active">Home</a></li>
+                    <li class=""><a href="/home" routerLinkActive="active">Home</a></li>
                    
                     <li> <a routerLink="/achat" routerLinkActive="active">Achat</a>
-                       <!-- <ul class="fh5co-sub-menu">
-
-                        class="fh5co-sub-ddown"
-                            <li><a href="#">Family</a></li>
-                            <li><a href="#">CSS3 &amp; HTML5</a></li>
-                            <li><a href="#">Angular JS</a></li>
-                            <li><a href="#">Node JS</a></li>
-                            <li><a href="#">Django &amp; Python</a></li>
-                        </ul>--> 
+                
                     </li>
                     <li><a routerLink="/location">Location</a></li> 
                     <li><a routerLink="/blog">Blog</a></li>   
                     <li><a routerLink="/contact-us">Contactez nous</a></li>
                     <li><a routerLink="/publierannonce">Publier annonce</a></li> 
-                    <li><a routerLink="/login" data-toggle="modal" data-target=".log-sign">Connexion</a></li>
+                    <li>
+                        <a *ngIf="!authStore.isAuthenticated" data-toggle="modal" data-target="#exampleModal">Connexion</a>
+                      
+                            <a *ngIf="authStore.isAuthenticated"  class="fh5co-sub-ddown">Espace utilisateur</a>
+                            <ul class="fh5co-sub-menu" *ngIf="authStore.isAuthenticated">
+                                <li><a href="#" data-toggle="modal" data-target="#profilmodal">Mon compte</a></li>
+                                <li><a (click)="disconnect()">Deconnexion</a></li>
+                            </ul>                 
+                        
+                    </li>
                 </ul>
             </nav>
         </div>

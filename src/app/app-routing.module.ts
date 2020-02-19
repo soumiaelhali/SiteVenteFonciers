@@ -12,7 +12,6 @@ import { ArticleComponent } from './article/article.component';
 import { DetailsAnnonceComponent } from './details-annonce/details-annonce.component';
 import { AproposComponent } from './apropos/apropos.component';
 import { AideComponent } from './aide/aide.component';
-import { LoginPopupComponent } from './login-popup/login-popup.component';
 
 
 const routes: Routes = [
@@ -22,7 +21,7 @@ const routes: Routes = [
   {path : 'location' , component : LocationComponent},
   {path : 'contact-us' , component : ContactUsComponent},
   {path : 'publierannonce', component: PublierAnnonceComponent},
-  {path : 'login' , component : LoginPopupComponent},
+  
   {path : 'apropos' , component : AproposComponent},
   {path : 'aide', component: AideComponent},
   {path : '', redirectTo: '/home', pathMatch: 'full'},
