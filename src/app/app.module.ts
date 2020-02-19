@@ -22,6 +22,8 @@ import { AnnonceService } from './services/service-annonce/annonce.service';
 import { ArticleComponent } from './article/article.component';
 
 import { DetailsAnnonceComponent } from './details-annonce/details-annonce.component';
+import { ProfileComponent } from './profile/profile.component';
+import { LoginPopupComponent } from './login-popup/login-popup.component';
 
 
 
@@ -41,7 +43,9 @@ import { DetailsAnnonceComponent } from './details-annonce/details-annonce.compo
     AideComponent,
     AproposComponent,
     ArticleComponent,
-    DetailsAnnonceComponent
+    DetailsAnnonceComponent,
+    ProfileComponent,
+    LoginPopupComponent
   ],
   imports: [
     BrowserModule,

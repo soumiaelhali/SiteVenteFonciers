@@ -4,9 +4,20 @@
     <div class="container">
         <div class="row">
 
-            <!--elements -->
+            <div class="col-md-4" *ngFor="let element of resp; let i = index"  style="margin-top: 30px;">
+                <a href="home/annonce/5" class="fh5co-property" [style.backgroundImage]= "'url(assets/images/land'+(i)+'.png)'">
+                    <span class="status" *ngIf = "element.choix == 'true' ">A Louer</span>
+                    <span class="status" *ngIf = "element.choix == 'false' ">A Vendre</span>
+                    <div class="prop-details">
+                        <span class="price">{{element.prix}} MAD</span>
+                        <h3>{{element.title}} , {{element.surface}} m² de surface</h3>
+                    </div>
+                </a>
+            </div>
+            <!--elements 
             <div class="col-md-4" *ngFor="let element of resp; let i = index">
                 <div class="property">
+                   
                     <a href="home/annonce/5" class="fh5co-property" [style.backgroundImage]= "'url(assets/images/land'+(i)+'.png)'">
 
                         <span class="status" *ngIf = "element.choix == 'true' ">A Louer</span>
@@ -27,170 +38,13 @@
 
 
 
-<!--end elements -->
-
-<!--
-   <div class="col-md-4">
-                <div class="property">
-                    <a href="#" class="fh5co-property" style="background-image: url(assets/images/rabat.jpg);">
-                        <span class="status">A Louer</span>
-                        <div class="overlay">
-                            <div class="content">
-                                <p> 2000MAD </p>
-                            </div>
-                        </div>
-                        <ul class="list-details">
-                            <li>Villa 1250m2 <li>
-                            <li>bien située à Californie</li>
-                            
-                        </ul>
-                    </a>
-                   
-                </div>
-            </div>
-            
-            <div class="col-md-4">
-                <div class="property">
-                    <a href="#" class="fh5co-property" style="background-image: url(assets/images/tanger.jpg);">
-                        <span class="status">A Louer</span>
-                        <div class="overlay">
-                            <div class="content">
-                                <p> 2000MAD </p>
-                            </div>
-                        </div>
-                        <ul class="list-details">
-                            <li>
-                                Appartement a louer (Maroc Tanger) - <li>
-                           
-                        </ul>
-                    </a>
-                   
-                </div>
-            </div>
-            
-            <div class="col-md-4">
-                <div class="property">
-                    <a href="#" class="fh5co-property" style="background-image: url(assets/images/spa.jpg);">
-                        <span class="status">A Vendre </span>
-                        
-                        <div class="overlay">
-                            <div class="content">
-                                <p> 2000MAD </p>
-                            </div>
-                        </div>
-                        
-                        <ul class="list-details">
-                            <li> villa rénovée 540m2 au quartier Habous, Casablanca<li>
-                            
-                        </ul>
-                    </a>
-                    
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="property">
-                    <a href="/home/annonce/5" class="fh5co-property" style="background-image: url(assets/images/land.jpg);">
-                        <span class="status">A Louer</span>
-                        <div class="overlay">
-                            <div class="content">
-                                <p> 2000MAD </p>
-                            </div>
-                        </div>
-                        <ul class="list-details">
-                            <li>2000 ft sq<li>
-                            <li>5 Bedroom:</li>
-                            <li>4 Bathroom:</li>
-                            <li>3 Garage:</li>
-                        </ul>
-                    </a>
-                   
-                </div>
-            </div>
-            
-            <div class="col-md-4">
-                <div class="property">
-                    <a href="#" class="fh5co-property" style="background-image: url(assets/images/maarif.jpg);">
-                        <span class="status">A Louer</span>
-                        <div class="overlay">
-                            <div class="content">
-                                <p> 2000MAD </p>
-                            </div>
-                        </div>
-                        <ul class="list-details">
-                            <li>
-                                Plateau de Bureau à vendre à Casablanca<li>
-                        </ul>
-                    </a>
-                   
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="property">
-                    <a href="#" class="fh5co-property" style="background-image: url(assets/images/terrain.jpg);">
-                        <span class="status">A Vendre </span>
-                        <div class="overlay">
-                            <div class="content">
-                                <p> 2000MAD </p>
-                            </div>
-                        </div>
-                        <ul class="list-details">
-                            <li>
-                                Terrain Agricole Tetouan  1300 m²<li>
-                        </ul>
-                    </a>
-                    
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="property">
-                    <a href="#" class="fh5co-property" style="background-image: url(assets/images/land.jpg);">
-                        <span class="status">A Vendre</span>
-                        <div class="overlay">
-                            <div class="content">
-                                <p> 2000MAD </p>
-                            </div>
-                        </div>
-                        <ul class="list-details">
-                            <li>2000 ft sq<li>
-                            <li>5 Bedroom:</li>
-                            <li>4 Bathroom:</li>
-                            <li>3 Garage:</li>
-                        </ul>
-                    </a>
-                   
-                </div>
-            </div>
-            
-            <div class="col-md-4">
-                <div class="property">
-                    <a href="#" class="fh5co-property" style="background-image: url(assets/images/kech.jpg);">
-                        <span class="status">A Vendre</span>
-                        <div class="overlay">
-                            <div class="content">
-                                <p> 2000MAD </p>
-                            </div>
-                        </div>
-                        <ul class="list-details">
-                            <li>
-                                Appartement À Vendre À Marrakech<li>
-                            
-                        </ul>
-                    </a>
-                   
-                </div>
-            </div>
-            
-           
-
--->
+end elements -->
          
             
         </div>
     </div>
 </div>
 
-<app-aide></app-aide>
-<app-apropos></app-apropos>
 
 
 

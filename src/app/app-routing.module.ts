@@ -9,24 +9,24 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { PublierAnnonceComponent } from './publier-annonce/publier-annonce.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { ArticleComponent } from './article/article.component';
-
 import { DetailsAnnonceComponent } from './details-annonce/details-annonce.component';
 import { AproposComponent } from './apropos/apropos.component';
 import { AideComponent } from './aide/aide.component';
+import { LoginPopupComponent } from './login-popup/login-popup.component';
 
 
 const routes: Routes = [
-  {path :'blog', component: BlogComponent},
+  {path : 'blog', component: BlogComponent},
   {path : 'home', component: HomeComponent},
   {path : 'achat' , component : VenteComponent},
   {path : 'location' , component : LocationComponent},
   {path : 'contact-us' , component : ContactUsComponent},
   {path : 'publierannonce', component: PublierAnnonceComponent},
-  {path : 'connexion' , component : ConnexionComponent},
+  {path : 'login' , component : LoginPopupComponent},
   {path : 'apropos' , component : AproposComponent},
   {path : 'aide', component: AideComponent},
   {path : '', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'blog/article/:id', component:ArticleComponent},
+  {path: 'blog/article/:id', component:ArticleComponent},
   {path: 'home/annonce/5', component:DetailsAnnonceComponent}
  
 ];

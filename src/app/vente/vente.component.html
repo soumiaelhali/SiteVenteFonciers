@@ -8,29 +8,19 @@
 		</div>
 		<div class="row" >
 
-			<div class="col-md-4" *ngFor="let element of resp ; let i = index" >
+			<div class="col-md-4" *ngFor="let element of resp; let i = index"  style="margin-top: 30px;">
 				<div *ngIf = "element.choix == 'false' ">
-					<div class="property">
-						<a href="#" class="fh5co-property" [style.backgroundImage]= "'url(assets/images/land'+(i)+'.png)'">
-	
-							<span class="status">A Vendre</span>
-						
-						   
-							<div class="overlay">                         
-								<div class="content">
-									<p> {{element.prix}} MAD</p>
-								</div>
-							</div>
-							<ul class="list-details">
-								<li> {{element.title}} , {{element.surface}} m² de surface </li>                          
-							</ul>
-						</a>
-						
+				<a href="home/annonce/5" class="fh5co-property" [style.backgroundImage]= "'url(assets/images/land'+(i)+'.png)'">
+					<span class="status">A Vendre</span>
+					
+					<div class="prop-details">
+						<span class="price">{{element.prix}} MAD</span>
+						<h3>{{element.title}} , {{element.surface}} m² de surface</h3>
 					</div>
-		
-			
+				</a>
+				</div>
 			</div>
-		</div>
+
 		
 		</div>
 	</div>

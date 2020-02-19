@@ -7,8 +7,22 @@
 				</div>
 			</div>
 			<div class="row"  >
+				<div class="col-md-4" *ngFor="let element of resp; let i = index"  style="margin-top: 30px;">
+					<div *ngIf = "element.choix == 'true' ">
+					<a href="home/annonce/5" class="fh5co-property" [style.backgroundImage]= "'url(assets/images/land'+(i)+'.png)'">
+						<span class="status">A Louer</span>
+						
+						<div class="prop-details">
+							<span class="price">{{element.prix}} MAD</span>
+							<h3>{{element.title}} , {{element.surface}} m² de surface</h3>
+						</div>
+					</a>
+					</div>
+				</div>
 
-				<div class="col-md-4" *ngFor="let element of resp ; let i = index">
+		<!--
+
+<div class="col-md-4" *ngFor="let element of resp ; let i = index">
 					<div *ngIf = "element.choix == 'true' ">
 					<div class="property">
 						<a href="#" class="fh5co-property" [style.backgroundImage]= "'url(assets/images/land'+(i)+'.png)'">
@@ -29,6 +43,11 @@
 				</div>
 
 			</div>
+
+		-->		
+
+
+
 			</div>
 		</div>
 	</div>
