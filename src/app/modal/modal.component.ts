@@ -47,7 +47,7 @@ export class ModalComponent implements OnInit {
         this.alertStatus = {
           enabled: true,
           class: 'alert-success',
-          message: 'lorem ......'
+          message: 'vous etes inscris avec succes '
         }  
       }else{
         let cmp:Compte;

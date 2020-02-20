@@ -24,5 +24,8 @@ export class HomeComponent implements OnInit {
       this.resp = res as annonce[];  
     });
   }
+  detaill(id){
+    console.log(id);
+  }
 
 }
