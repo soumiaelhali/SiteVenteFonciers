@@ -1,72 +1,77 @@
-import { Injectable } from '@angular/core';
-import{FormGroup,FormControl,Validators}from"@angular/forms";
-import { HttpClient } from '@angular/common/http';
-import { annonce } from '../../model/annonce';
+import { Injectable } from "@angular/core";
+import { FormGroup, FormControl, Validators } from "@angular/forms";
+import { HttpClient } from "@angular/common/http";
+import { annonce } from "../../model/annonce";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
 export class AnnonceService {
+  constructor(private http: HttpClient) {}
 
-  constructor(private http:HttpClient) { }
+  private url = "http://localhost:3000/annonces";
 
-  private url = "http://localhost:3000/annonces"
-
-  form:FormGroup = new FormGroup({
+  form: FormGroup = new FormGroup({
     id: new FormControl(null),
-    title: new FormControl('',Validators.required),
-    nom: new FormControl('',Validators.required),
-    email: new FormControl('',Validators.email),
-    telephone: new FormControl('',[Validators.required,Validators.minLength(8)]),
+    title: new FormControl("", Validators.required),
+    nom: new FormControl("", Validators.required),
+    email: new FormControl("", Validators.email),
+    telephone: new FormControl("", [
+      Validators.required,
+      Validators.minLength(8)
+    ]),
     surface: new FormControl(null),
     choix: new FormControl(false),
-    adresse: new FormControl(''),
-    detail: new FormControl(''),
-    image_url: new FormControl(''),
+    adresse: new FormControl(""),
+    detail: new FormControl(""),
+    image_url: new FormControl(""),
     prix: new FormControl(null),
     etat: new FormControl(false),
     date: new FormControl(Date.now())
-  
   });
-    
 
-  initializeFormGroup(){
+  initializeFormGroup() {
     this.form.setValue({
-      title: '',
-      email: '',
-      surface: '',
-      image_url: '',
-      adresse: '',
-      detail: '',
-      prix: '',
+      title: "",
+      email: "",
+      surface: "",
+      image_url: "",
+      adresse: "",
+      detail: "",
+      prix: "",
       date: Date.now(),
       etat: false,
-      alouer:false,
-      nom_vendeur:'',
-      email_vendeur:'',
-      tel_vendeur:''
+      alouer: false,
+      nom_vendeur: "",
+      email_vendeur: "",
+      tel_vendeur: ""
     });
   }
-  findAll(){
+
+  id: number;
+
+  populatedetail(id) {
+    this.id = id;
+  }
+
+  findAll() {
     return this.http.get<annonce[]>(this.url);
   }
-  add(annonce){
+  add(annonce) {
     return this.http.post<annonce>(this.url, annonce);
   }
-  delete(id){
+  delete(id) {
     return this.http.delete(`${this.url}/${id}`);
   }
-  update(annonce){
+  update(annonce) {
     return this.http.put(`${this.url}/${annonce.id}`, annonce);
   }
 
-  populateform(row){
-    this.form.setValue(row);
+  getAnonce() {
+    return this.http.get<annonce>(`${this.url}/${this.id}`);
   }
-  
+
   getAll() {
     return this.http.get<annonce[]>(this.url);
   }
-
-
 }
