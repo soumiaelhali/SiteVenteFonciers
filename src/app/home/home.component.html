@@ -4,14 +4,17 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-md-4" *ngFor="let element of resp; let i = index"  style="margin-top: 30px;">
-                <a href="home/annonce/5" class="fh5co-property" [style.backgroundImage]= "'url(assets/images/land'+(i)+'.png)'">
-                    <span class="status" *ngIf = "element.choix == 'true' ">A Louer</span>
-                    <span class="status" *ngIf = "element.choix == 'false' ">A Vendre</span>
+            <div class="col-md-4" *ngFor="let element of resp; let i = index" style="margin-top: 30px;">
+                <a [routerLink]="" (click)="getDetaill(element.id)" class="fh5co-property"
+                    [style.backgroundImage]="'url(assets/images/land'+(i)+'.png)'">
+
+                    <span class="status" *ngIf="element.choix == 'true' ">A Louer</span>
+                    <span class="status" *ngIf="element.choix == 'false' ">A Vendre</span>
                     <div class="prop-details">
                         <span class="price">{{element.prix}} MAD</span>
                         <h3>{{element.title}} , {{element.surface}} m² de surface</h3>
                     </div>
+
                 </a>
             </div>
             <!--elements 
@@ -39,12 +42,8 @@
 
 
 end elements -->
-         
-            
+
+
         </div>
     </div>
 </div>
-
-
-
-
